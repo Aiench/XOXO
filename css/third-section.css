@@ -1,0 +1,45 @@
+.third-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 9rem;
+}
+
+.img-sails {
+  height: 41.3rem;
+  width: 25rem;
+}
+
+.good-sails {
+  font-size: 3.2rem;
+  margin-bottom: 6rem;
+}
+
+.product-sails {
+  border: 1px solid black;
+  margin-right: 2rem;
+}
+
+.product-sails:last-child {
+  margin-right: 0;
+}
+
+.title-sails {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.description-sails {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+button {
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+}

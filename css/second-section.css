@@ -1,0 +1,44 @@
+.second-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+
+.about-compani {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  height: 14.5rem;
+  width: 46.7rem;
+}
+
+.img-descrtiption {
+  width: 198px;
+  height: 110px;
+  margin-right: 2.5rem;
+  overflow: hidden;
+}
+
+.img-descrtiption img {
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.child {
+  width: 32rem;
+  text-align: center;
+}
+
+.impotant-title {
+  font-size: 1.8rem;
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.impotant-description {
+  font-size: 2rem;
+  font-style: italic;
+}

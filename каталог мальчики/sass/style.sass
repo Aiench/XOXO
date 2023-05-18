@@ -1,0 +1,232 @@
+html
+    font-size: 10px
+
+body
+    
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.container
+    width: 140rem
+    margin: 0 auto
+
+a
+    text-decoration: none
+
+a:visited
+    color: #3c3c3c
+
+ul
+    list-style: none
+
+
+
+
+.navigation
+    padding-top: 5rem
+    position: relative
+    margin-bottom: 5rem
+.list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    
+
+
+.item
+    margin-right: 4rem
+    font-size: 2.2rem
+    font-family: 'Delicious Handrawn', cursive
+.item:last-child
+    margin-right: 0
+    
+
+.xoxo-logo
+    display: inline-block
+    position: absolute
+    top: .5rem
+    left: 0rem
+
+.cart-content
+    position: absolute
+    right: 0
+    top: 100%
+    background-color: #fff
+    box-shadow: 0 .4rem .4rem rgba(135,135 ,135 ,0.25 )
+    width: 49rem
+    cursor: default
+    &__bottom
+        padding: 2.4rem 2rem
+        border-top: 1px solid #eaeaea
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__fullprice
+        margin-top: .8rem
+        font-weight: 700
+        font-size: 2rem
+        line-height: 2.3rem
+        color: #4d4d4d
+        margin-bottom: 1.5rem
+        display: flex
+        flex-direction: column
+    &__btn
+        width: 24.6rem
+        text-align: center
+        color: #fff
+        background-color: #6a0cec
+        border-radius: .3rem
+        height: 4rem
+
+
+
+.cart
+    z-index: 100000
+    position: relative
+    transition: background-color 0.3s
+
+.cart.active:hover
+    cursor: pointer
+    background-color: rgba(93,113,221, 0.1)
+
+.cart.active:hover .cart-content
+    opacity: 1
+    visibility: visible
+    transition: opacity .3s visibility .3s
+
+.cart__quantity
+    position: absolute
+    right: -1.8rem
+    top: 50%
+    transform: translateY(-50%)
+    background-color: #de707b
+    border-radius: 100%
+    padding: .2rem
+    height: 1.6rem
+    min-width: 1.6rem
+    color: #fff
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    font-size: 1.2rem
+    margin-top: -1rem
+    line-height: 1
+
+.cart-content
+    opacity: 0
+    visibility: hidden
+    transition: opacity .3s visibility .3s
+.cart-content__list
+    overflow: auto
+    max-height: 33rem
+    margin-top: 5rem
+
+.cart-product
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1.2rem 2 rem
+    transition: background-color .3s
+    &__img
+        max-width: 10rem
+        max-height: 10rem
+        object-fit: cover
+        margin-right: 2rem
+    &__title
+        max-width: 28rem
+        font-weight: 400
+        font-size: 1.4rem
+        line-height: 2rem
+        color: #4d4d4d
+        margin-bottom: 1.5rem
+    &__price
+        font-weight: 700
+        font-size: 2rem
+        line-height: 2.3rem
+        color: #4d4d4d
+    &__delete
+        width: 1.6rem
+        height: 1.6em
+        border: none
+        background-color: transparent
+        padding: 0
+        background-image: url("../каталог мальчики/icons/free-icon-recycle-bin-3156999.png")
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        margin-left: auto
+
+.cart-product:hover
+    background-color: rgba(77, 77, 77 ,0.2 )
+
+
+.boys
+    padding-top: 6rem
+    text-align: center
+    font-size: 4rem
+    margin-bottom: 9rem
+
+.boys-img
+    width: 18rem
+    height: 25rem
+.boys-div
+    width: 25rem
+    height: auto
+    margin-bottom: 10rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+
+.bay
+    display: inline-block	
+    padding: 0 25px
+    margin: 0 15px 15px 0
+    outline: none
+    border-radius: 50px
+    height: 4.6rem
+    font-size: 1.4rem
+    font-weight: 600
+    color: #fff
+    background-color: #6a0cec
+    cursor: pointer
+
+.bay:disabled
+    opacity: 0.4
+    pointer-events: none
+.product
+    display: flex
+    justify-content: space-between
+
+
+
+
+.boysdescrip
+    font-size: 2.5rem
+    margin-bottom: 1rem
+
+
+.boyscolor
+    font-size: 1.8rem
+    margin-bottom: 1rem
+
+span
+    font-size: 1.8rem
+    margin-bottom: 1rem
+
+.price
+    font-size: 3rem
+    margin-bottom: 2rem
+    text-align: center
+    font-weight: bold
+
+.grid-div
+    width: 100rem
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(4, 1fr)
